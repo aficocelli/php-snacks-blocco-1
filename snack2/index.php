@@ -16,12 +16,9 @@ $mail = $_GET['mail'];
 
 $age = $_GET['age'];
 
-$login = false;
+if(strlen($name) > 3){
 
-if(count($name) > 3){
-
-    echo "ok";
-
+   echo "accesso riuscito";
 }
     
 ?>
@@ -35,6 +32,6 @@ if(count($name) > 3){
     <title>Document</title>
 </head>
 <body>
-    <h1> ciao <?php $name ?> </h1>
+    
 </body>
 </html>
