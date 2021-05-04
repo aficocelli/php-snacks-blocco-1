@@ -16,9 +16,13 @@ $mail = $_GET['mail'];
 
 $age = $_GET['age'];
 
-if(strlen($name) > 3){
 
-   echo "accesso riuscito";
+var_dump();
+
+if(strlen($name) > 3 && is_numeric($age) && strpos($mail, "@") && strpos($mail, ".")){
+    echo "accesso riuscito";
+} else{
+    echo "accesso negato";
 }
     
 ?>
